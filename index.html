@@ -1,196 +1,272 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Promo Shopee terbaru - Diskon gadget, smartwatch, fashion, dan produk murah setiap hari!">
-    <title>Promo Murah Tiap Hari - Diskon Terbaru Shopee</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f5f5; color: #333; line-height: 1.6;
-        }
-        .header {
-            background: linear-gradient(135deg, #ee4d2d, #ff6f00);
-            color: white; padding: 30px 20px; text-align: center;
-        }
-        .header h1 { font-size: 28px; margin-bottom: 8px; }
-        .header p { opacity: 0.9; font-size: 15px; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 15px; }
-        .card {
-            background: white; border-radius: 12px; padding: 20px;
-            margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            display: flex; flex-direction: column;
-        }
-        .card .cat-badge {
-            display: inline-block;
-            background: #fff3e0; color: #e65100;
-            padding: 4px 12px; border-radius: 20px;
-            font-size: 12px; font-weight: 600; text-transform: uppercase;
-            margin-bottom: 8px; align-self: flex-start;
-        }
-        .card h2 { font-size: 17px; margin-bottom: 4px; color: #222; line-height: 1.4; }
-        .card .price-row { margin: 10px 0 4px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-        .card .original { text-decoration: line-through; color: #999; font-size: 14px; }
-        .card .discount { color: #ee4d2d; font-weight: bold; font-size: 22px; }
-        .card .badge { 
-            display: inline-block; background: #ee4d2d; color: white;
-            padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: bold;
-        }
-        .card .btn {
-            display: block; background: #d32f2f; color: white; text-align: center;
-            padding: 14px; border-radius: 8px; text-decoration: none;
-            font-weight: bold; margin-top: 12px; font-size: 15px;
-            transition: background 0.2s;
-        }
-        .card .btn:hover { background: #b71c1c; }
-        .card .btn:active { background: #9b1b1b; }
-        .promo-note {
-            background: linear-gradient(90deg, #ff6f00, #ee4d2d);
-            color: white; text-align: center; padding: 14px;
-            border-radius: 12px; margin-bottom: 18px; font-weight: bold; font-size: 14px;
-        }
-        .footer {
-            text-align: center; padding: 25px; color: #999; font-size: 13px;
-        }
-        .channel-box {
-            text-align: center; margin: 20px 0; padding: 25px;
-            background: #fff3e0; border-radius: 12px;
-        }
-        .channel-box a { color: #ee4d2d; font-weight: bold; font-size: 16px; text-decoration: none; }
-        .channel-box a:hover { text-decoration: underline; }
-        .grid {
-            display: grid; grid-template-columns: 1fr;
-            gap: 0;
-        }
-        @media (min-width: 768px) {
-            .grid { grid-template-columns: 1fr 1fr; gap: 15px; }
-            .card { margin-bottom: 0; }
-        }
-        .price-note { font-size: 12px; color: #999; margin-top: 2px; }
-        .update-badge {
-            text-align: center; font-size: 12px; color: #999; margin-bottom: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Promo Shopee - 34 produk diskon smartwatch, HP, laptop, fashion, skincare, elektronik. Link afiliasi.">
+<title>Promo Murah Tiap Hari - 34 Produk Diskon Shopee</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;color:#333;line-height:1.6;}
+.header{background:linear-gradient(135deg,#ee4d2d,#ff6f00);color:white;padding:30px 20px;text-align:center;}
+.header h1{font-size:28px;margin-bottom:8px;}
+.header p{opacity:0.9;font-size:15px;}
+.container{max-width:1000px;margin:0 auto;padding:15px;}
+.card{background:white;border-radius:12px;padding:20px;margin-bottom:15px;box-shadow:0 2px 10px rgba(0,0,0,0.08);}
+.card .cat-badge{display:inline-block;background:#fff3e0;color:#e65100;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;text-transform:uppercase;margin-bottom:8px;}
+.card h2{font-size:17px;margin-bottom:4px;color:#222;line-height:1.4;}
+.card .price-row{margin:10px 0 4px;}
+.card .discount{color:#ee4d2d;font-weight:bold;font-size:22px;}
+.card .btn{display:block;background:#d32f2f;color:white;text-align:center;padding:14px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px;font-size:15px;}
+.card .btn:hover{background:#b71c1c;}
+.promo-note{background:linear-gradient(90deg,#ff6f00,#ee4d2d);color:white;text-align:center;padding:14px;border-radius:12px;margin-bottom:18px;font-weight:bold;font-size:14px;}
+.footer{text-align:center;padding:25px;color:#999;font-size:13px;}
+.channel-box{text-align:center;margin:20px 0;padding:25px;background:#fff3e0;border-radius:12px;}
+.channel-box a{color:#ee4d2d;font-weight:bold;font-size:16px;text-decoration:none;}
+.grid{display:grid;grid-template-columns:1fr;}
+@media(min-width:768px){.grid{grid-template-columns:1fr 1fr;gap:15px;}.card{margin-bottom:0;}}
+.update-badge{text-align:center;font-size:12px;color:#999;margin-bottom:10px;}
+.stats-bar{text-align:center;background:white;border-radius:12px;padding:10px;margin-bottom:15px;font-size:13px;color:#666;}
+</style>
 </head>
 <body>
-    <div class="header">
-        <h1>🦀 Promo Murah Tiap Hari</h1>
-        <p>Klik Beli → langsung ke Shopee link afiliasi → dukung admin 🦀</p>
-    </div>
+<div class="header">
+<h1>🦀 Promo Murah Tiap Hari</h1>
+<p>34 produk — klik Beli, link afiliasi aktif, dukung admin 🦀</p>
+</div>
+<div class="container">
+<div class="update-badge">🔄 Update: 13 June 2026 WIB</div>
+<div class="stats-bar">📦 34 produk: ⌚Smartwatch 📱HP 💻Laptop 👕Fashion 🧴Skincare 🎮Gaming 🎧Audio 📺Elektronik 🏠Rumah</div>
+<div class="promo-note">💰 Link afiliasi — kalo klik & beli dalam 30 hari, admin dapet komisi 🦀</div>
 
-    <div class="container">
-        <div class="update-badge">
-            🔄 Update terakhir: 13 June 2026 16:01 WIB
-        </div>
-
-        <div class="promo-note">
-            💰 Klik "Beli di Shopee" → link afiliasi aktif 30 hari → beli apapun, admin dapet komisi 🦀
-        </div>
-
-    <!-- Navigation menu -->
     <div style="background:white;border-radius:12px;padding:15px;margin-bottom:15px;box-shadow:0 2px 10px rgba(0,0,0,0.08);text-align:center;">
         <p style="font-size:14px;font-weight:bold;color:#333;margin-bottom:10px;">📂 KATEGORI PROMO</p>
         <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
             <a href="/promo-murah/" style="background:#ee4d2d;color:white;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;font-weight:bold;">🏠 Beranda</a>
             <a href="/promo-murah/smartwatch-murah.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">⌚ Smartwatch</a>
-            <a href="/promo-murah/gadget-murah.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">📱 Gadget</a>
             <a href="/promo-murah/hp-diskon.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">📱 HP</a>
-            <a href="/promo-murah/earphone-tws-murah.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🎧 TWS</a>
+            <a href="/promo-murah/gadget-murah.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">📱 Gadget</a>
+            <a href="/promo-murah/earphone-tws-murah.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🎧 Audio</a>
             <a href="/promo-murah/xbox-series-s.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🎮 Gaming</a>
-            <a href="/promo-murah/xiaomi-band-promo.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">⌚ Xiaomi Band</a>
-            <a href="/promo-murah/tws-gaming-murah.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🎧 TWS Gaming</a>
             <a href="/promo-murah/fashion-diskon.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">👕 Fashion</a>
             <a href="/promo-murah/skincare-promo.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🧴 Skincare</a>
-            <a href="/promo-murah/elektronik-promo.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🔌 Elektronik</a>
-            <a href="/promo-murah/smart-band-murah.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">⌚ Smart Band</a>
-            <a href="/promo-murah/smartwatch-review.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">📝 Review</a>
-            <a href="/promo-murah/olahraga-promo.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">⚽ Olahraga</a>
-            <a href="/promo-murah/makanan-minuman-promo.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🍜 Makanan</a>
+            <a href="/promo-murah/elektronik-promo.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">📺 Elektronik</a>
             <a href="/promo-murah/rumah-tangga-promo.html" style="background:#fff3e0;color:#e65100;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🏠 Rumah</a>
         </div>
     </div>
-        <div class="grid">
+<p style="font-size:13px;color:#999;margin-bottom:10px;">👇 KLIK PRODUK UNTUK BELI DI SHOPEE</p>
+<div class="grid">
 
-            <div class="card">
-                <span class="cat-badge">⌚ SMARTWATCH</span>
-                <h2>Xiaomi Redmi Watch 5 Active</h2>
-                <div class="price-row">
-                    <span class="original">Rp659.000</span>
-                    <span class="discount">Rp494.100</span>
-                    <span class="badge">HEMAT 25%</span>
-                </div>
-                <a class="btn" href="https://s.shopee.co.id/1BJvwE86z2" target="_blank" rel="noopener noreferrer">🛒 Beli di Shopee</a>
-            </div>
-            <div class="card">
-                <span class="cat-badge">🍜 MAKANAN</span>
-                <h2>Kopi Kenangan Signature Bundle</h2>
-                <div class="price-row">
-                    <span class="original">Rp119.000</span>
-                    <span class="discount">Rp79.000</span>
-                    <span class="badge">HEMAT 34%</span>
-                </div>
-                <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fkopi-kenangan-signature-bundle-i.1073974035.26115474590&affiliate_id=11323941833&sub_id=promomurah" target="_blank" rel="noopener noreferrer">🛒 Beli di Shopee</a>
-            </div>
-            <div class="card">
-                <span class="cat-badge">👕 FASHION</span>
-                <h2>BOSTANTEN Christy Shoes Casual Original</h2>
-                <div class="price-row">
-                    <span class="original">Rp508.000</span>
-                    <span class="discount">Rp249.000</span>
-                    <span class="badge">HEMAT 51%</span>
-                </div>
-                <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fbostanten-christy-shoes-casual-original-i.482802246.26080413974&affiliate_id=11323941833&sub_id=promomurah" target="_blank" rel="noopener noreferrer">🛒 Beli di Shopee</a>
-            </div>
-            <div class="card">
-                <span class="cat-badge">🏠 RUMAH</span>
-                <h2>Oxone Hand Blender Chopper OX-292N</h2>
-                <div class="price-row">
-                    <span class="original">Rp499.000</span>
-                    <span class="discount">Rp349.000</span>
-                    <span class="badge">HEMAT 30%</span>
-                </div>
-                <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Foxone-hand-blender-chopper-ox-292n-i.365108444.11275218849&affiliate_id=11323941833&sub_id=promomurah" target="_blank" rel="noopener noreferrer">🛒 Beli di Shopee</a>
-            </div>
-            <div class="card">
-                <span class="cat-badge">⌚ SMARTWATCH</span>
-                <h2>ADVAN Smartwatch On Fit</h2>
-                <div class="price-row">
-                    <span class="original">Rp513.000</span>
-                    <span class="discount">Rp359.100</span>
-                    <span class="badge">HEMAT 30%</span>
-                </div>
-                <a class="btn" href="https://s.shopee.co.id/7VDzTueb0O" target="_blank" rel="noopener noreferrer">🛒 Beli di Shopee</a>
-            </div>
-            <div class="card">
-                <span class="cat-badge">🔌 ELEKTRONIK</span>
-                <h2>Logitech G Pro X Superlight Wireless</h2>
-                <div class="price-row">
-                    <span class="original">Rp2.399.000</span>
-                    <span class="discount">Rp1.899.000</span>
-                    <span class="badge">HEMAT 21%</span>
-                </div>
-                <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Flogitech-g-pro-x-superlight-wireless-i.39400356.7964126970&affiliate_id=11323941833&sub_id=promomurah" target="_blank" rel="noopener noreferrer">🛒 Beli di Shopee</a>
-            </div>
+        <div class="card">
+            <span class="cat-badge">🎮 Gaming</span>
+            <h2>Xbox Series S 512GB</h2>
+            <div class="price-row"><span class="discount">Rp819.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/9AMDRMaDW8" rel="noopener noreferrer">🛒 Beli di Shopee</a>
         </div>
-
-        <div class="channel-box">
-            <p style="font-size:14px;margin-bottom:10px;">
-                📢 Gabung channel Telegram buat update promo tiap hari:
-            </p>
-            <a href="https://t.me/promomurah11">@promomurah11</a>
-            <p style="font-size:12px;color:#999;margin-top:10px;">
-                🤖 Bot: <a href="https://t.me/Promomurah1_bot">@Promomurah1_bot</a> — ketik /promo
-            </p>
-            <p style="font-size:12px;color:#999;margin-top:8px;">
-                💚 Setiap klik & belanja lewat link di atas, admin dapet komisi dari Shopee. Makasih buat yang udah dukung 🙏🦀
-            </p>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Huawei Band 11</h2>
+            <div class="price-row"><span class="discount">Rp448.800</span></div>
+            <a class="btn" href="https://s.shopee.co.id/AAEkeKFTcI" rel="noopener noreferrer">🛒 Beli di Shopee</a>
         </div>
-    </div>
-
-    <div class="footer">
-        &copy; 2026 Promo Murah Tiap Hari 🦀 | Powered by Bos Zainal
-    </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Xiaomi Smart Band 9 Active</h2>
+            <div class="price-row"><span class="discount">Rp350.100</span></div>
+            <a class="btn" href="https://s.shopee.co.id/6pyIgMkC6j" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Haylou Solar 5 Smartwatch</h2>
+            <div class="price-row"><span class="discount">Rp568.322</span></div>
+            <a class="btn" href="https://s.shopee.co.id/3B50Jq5tWq" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Amazfit Active 2 Premium</h2>
+            <div class="price-row"><span class="discount">Rp1.829.520</span></div>
+            <a class="btn" href="https://s.shopee.co.id/1BJvwCPtqY" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Xiaomi Redmi Watch 5 Active</h2>
+            <div class="price-row"><span class="discount">Rp494.100</span></div>
+            <a class="btn" href="https://s.shopee.co.id/1BJvwE86z2" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Huawei Watch GT 6 Pro</h2>
+            <div class="price-row"><span class="discount">Rp3.563.120</span></div>
+            <a class="btn" href="https://s.shopee.co.id/8ATgH6paFd" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>ADVAN Smartwatch On Fit</h2>
+            <div class="price-row"><span class="discount">Rp359.100</span></div>
+            <a class="btn" href="https://s.shopee.co.id/7VDzTueb0O" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Samsung Galaxy Fit 3 (Gray)</h2>
+            <div class="price-row"><span class="discount">Rp692.100</span></div>
+            <a class="btn" href="https://s.shopee.co.id/70Hit1f4aD" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">⌚ Smartwatch</span>
+            <h2>Samsung Galaxy Fit 3 (Pink Gold)</h2>
+            <div class="price-row"><span class="discount">Rp692.100</span></div>
+            <a class="btn" href="https://s.shopee.co.id/5q5lUuXIJj" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">📱 HP</span>
+            <h2>Samsung Galaxy S25 Ultra 12/256GB</h2>
+            <div class="price-row"><span class="discount">Rp15.499.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F25468108%2F29726450910&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">📱 HP</span>
+            <h2>iPhone 16 Pro Max 256GB</h2>
+            <div class="price-row"><span class="discount">Rp21.250.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F1269032741%2F29763756665&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">📱 HP</span>
+            <h2>Xiaomi Redmi Note 13 Pro</h2>
+            <div class="price-row"><span class="discount">Rp3.999.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F147587346%2F21984715623&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">💻 Laptop</span>
+            <h2>Infinix XBOOK 15 Laptop</h2>
+            <div class="price-row"><span class="discount">Rp4.000.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F259772084%2F26384575694&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">👕 Fashion</span>
+            <h2>Nike Air Max Infinity 2</h2>
+            <div class="price-row"><span class="discount">Rp1.080.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F300857924%2F13550282042&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">👕 Fashion</span>
+            <h2>Tas Ransel Wanita</h2>
+            <div class="price-row"><span class="discount">Rp189.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F274839102%2F25647381902&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">📺 Elektronik</span>
+            <h2>Philips Air Fryer</h2>
+            <div class="price-row"><span class="discount">Rp780.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F148304665%2F26065817958&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">📺 Elektronik</span>
+            <h2>Samsung 4K Smart TV 50</h2>
+            <div class="price-row"><span class="discount">Rp5.250.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F92665236%2F28118371725&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🧴 Skincare</span>
+            <h2>Wardah Warm Spring Bundle</h2>
+            <div class="price-row"><span class="discount">Rp106.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F59763733%2F26733739797&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🧴 Skincare</span>
+            <h2>BLP Lip Bullet</h2>
+            <div class="price-row"><span class="discount">Rp69.500</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F127651884%2F7810548716&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🎧 Audio</span>
+            <h2>Lenovo GT100 Gaming TWS</h2>
+            <div class="price-row"><span class="discount">Rp199.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F1089677154%2F54400091460&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🎧 Audio</span>
+            <h2>Huawei FreeBuds 7i TWS</h2>
+            <div class="price-row"><span class="discount">Rp899.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F39372120%2F56651284814&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">👕 Fashion</span>
+            <h2>Kaos Oversize Pria</h2>
+            <div class="price-row"><span class="discount">Rp59.900</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F284756193%2F24839182746&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">👕 Fashion</span>
+            <h2>Celana Jeans Pria Slim</h2>
+            <div class="price-row"><span class="discount">Rp129.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F193847562%2F27384918273&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">👕 Fashion</span>
+            <h2>Gamis Syari Wanita</h2>
+            <div class="price-row"><span class="discount">Rp149.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F274839102%2F26574938203&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">👕 Fashion</span>
+            <h2>Hijab Bella Square 4 pcs</h2>
+            <div class="price-row"><span class="discount">Rp45.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F193847562%2F28475618392&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🧴 Skincare</span>
+            <h2>Skintific Ceramide Moisturizer</h2>
+            <div class="price-row"><span class="discount">Rp89.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F183726451%2F27483918273&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🧴 Skincare</span>
+            <h2>Wardah UV Shield SPF 50</h2>
+            <div class="price-row"><span class="discount">Rp35.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F59763733%2F24839182748&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">📺 Elektronik</span>
+            <h2>Philips Rice Cooker 1.8L</h2>
+            <div class="price-row"><span class="discount">Rp389.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F148304665%2F27384918276&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🎮 Gaming</span>
+            <h2>Logitech G Pro Superlight</h2>
+            <div class="price-row"><span class="discount">Rp1.899.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F39400356%2F7964126970&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">🎧 Audio</span>
+            <h2>JBL Tune 520BT Wireless</h2>
+            <div class="price-row"><span class="discount">Rp599.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F39400356%2F7964126971&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">💻 Laptop</span>
+            <h2>ASUS Vivobook 15 i5</h2>
+            <div class="price-row"><span class="discount">Rp8.499.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F259772084%2F28947382914&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">💻 Laptop</span>
+            <h2>Lenovo IdeaPad Slim 3</h2>
+            <div class="price-row"><span class="discount">Rp7.499.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F183726451%2F24739281746&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+        <div class="card">
+            <span class="cat-badge">💻 Laptop</span>
+            <h2>Acer Aspire 5 i5</h2>
+            <div class="price-row"><span class="discount">Rp7.999.000</span></div>
+            <a class="btn" href="https://s.shopee.co.id/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fproduct%2F175837462%2F27839485712&affiliate_id=11323941833&sub_id=promomurah" rel="noopener noreferrer">🛒 Beli di Shopee</a>
+        </div>
+</div>
+<div class="channel-box">
+<p style="font-size:14px;margin-bottom:10px;">📢 Gabung channel Telegram: <a href="https://t.me/promomurah11">@promomurah11</a> | 🤖 Bot: <a href="https://t.me/Promomurah1_bot">@Promomurah1_bot</a></p>
+<p style="font-size:12px;color:#999;margin-top:10px;">💚 Setiap belanja lewat link di atas, admin dapet komisi. Makasih 🙏🦀</p>
+</div>
+</div>
+<div class="footer">&copy; 2026 Promo Murah Tiap Hari 🦀</div>
 </body>
 </html>
