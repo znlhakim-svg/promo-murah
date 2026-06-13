@@ -3,41 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mengalihkan ke Shopee...</title>
+<title>Klik Link Dulu ya...</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: sans-serif; text-align: center; background: #f5f5f5; padding: 40px 20px; color: #333; }
-.card { background: white; border-radius: 12px; padding: 30px; max-width: 380px; margin: 0 auto; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-.spinner { border: 4px solid #f3f3f3; border-top: 4px solid #ee4d2d; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 20px auto; }
-@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+body { font-family: sans-serif; text-align: center; background: #f5f5f5; padding: 30px 20px; color: #333; }
+.card { background: white; border-radius: 12px; padding: 25px; max-width: 400px; margin: 20px auto; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+h2 { font-size: 18px; margin-bottom: 10px; }
+p { font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 10px; }
+.btn-aff { display: block; background: #43a047; color: white; padding: 16px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; margin: 15px 0; }
+.btn-aff:hover { background: #388e3c; }
+.btn-search { display: inline-block; background: #ee4d2d; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 15px; margin: 5px; }
+.btn-search:hover { background: #d63f1f; }
+.small { font-size: 12px; color: #aaa; }
 </style>
 </head>
 <body>
-<div class="card">
-    <div class="spinner"></div>
-    <h3>Mengalihkan...</h3>
-    <p style="color:#666;font-size:14px;margin-top:10px;">Sabarrr, lagi nyariin produk 🦀</p>
+
+<div class="card" id="s1">
+    <h2>🔗 Klik link dulu ya!</h2>
+    <p>Klik tombol hijau dulu biar admin dapet komisi.<br>Nanti langsung nyari produknya otomatis 🦀</p>
+    <a class="btn-aff" id="affBtn" href="https://s.shopee.co.id/4ftnloxacO">🔗 Klik buat dukung admin!</a>
+    <p class="small">Pas diklik, nanti muncul tombol cari produknya 👍</p>
+</div>
+
+<div class="card" id="s2" style="display:none;">
+    <h2>✅ Afiliasi aktif 30 hari!</h2>
+    <p>Makasih udah dukung! Apapun yang dibeli, admin dapet komisi 🦀🙏</p>
+    <a class="btn-search" id="searchBtn">🎯 Cari Produk di Shopee</a>
 </div>
 
 <script>
-// Baca keyword dari URL
 var params = new URLSearchParams(window.location.search);
 var keyword = params.get('q') || '';
-
-// Bangun search URL
 var searchUrl = keyword
     ? 'https://shopee.co.id/search?keyword=' + encodeURIComponent(keyword)
     : 'https://shopee.co.id/';
 
-// ⬇️ Langkah rahasia: kirim sinyal ke link afiliasi Bos (biar cookie aktif)
-// Ini jalan di background, user gak perlu ngapa-ngapain
-var tracker = new Image();
-tracker.src = 'https://s.shopee.co.id/4ftnloxacO';
+document.getElementById('affBtn').addEventListener('click', function() {
+    document.getElementById('s1').style.display = 'none';
+    document.getElementById('s2').style.display = 'block';
+});
 
-// ⬇️ Abis 1.5 detik, redirect ke search produk
-setTimeout(function() {
-    window.location.replace(searchUrl);
-}, 1500);
+document.getElementById('searchBtn').href = searchUrl;
 </script>
 </body>
 </html>
