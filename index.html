@@ -72,6 +72,28 @@
         .update-badge {
             text-align: center; font-size: 12px; color: #999; margin-bottom: 10px;
         }
+        .cat-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+            margin-bottom: 20px;
+        }
+        .cat-link {
+            display: flex; align-items: center; justify-content: center;
+            background: white; padding: 14px 10px; border-radius: 12px;
+            text-decoration: none; color: #333; font-size: 13px; font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.2s; text-align: center;
+        }
+        .cat-link:hover {
+            background: #ee4d2d; color: white; transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(238,77,45,0.3);
+        }
+        .cat-title {
+            font-size: 18px; font-weight: bold; color: #ee4d2d;
+            margin: 15px 0 10px; text-align: center;
+        }
+        @media (min-width: 768px) {
+            .cat-grid { grid-template-columns: 1fr 1fr 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -87,6 +109,25 @@
 
         <div class="promo-note">
             💰 Klik "Beli di Shopee" → link afiliasi aktif 30 hari → beli apapun, admin dapet komisi 🦀
+        </div>
+
+        <div class="cat-title">📂 Jelajahi Kategori Promo</div>
+        <div class="cat-grid">
+            <a href="smartwatch-murah.html" class="cat-link">⌚ Smartwatch Murah</a>
+            <a href="hp-diskon.html" class="cat-link">📱 HP Diskon</a>
+            <a href="earphone-tws-murah.html" class="cat-link">🎧 TWS Murah</a>
+            <a href="tws-gaming-murah.html" class="cat-link">🎮 TWS Gaming</a>
+            <a href="xiaomi-band-promo.html" class="cat-link">📿 Xiaomi Band</a>
+            <a href="smart-band-murah.html" class="cat-link">📿 Smart Band</a>
+            <a href="smartwatch-review.html" class="cat-link">📝 Review Watch</a>
+            <a href="xbox-series-s.html" class="cat-link">🎮 Xbox Series S</a>
+            <a href="gadget-murah.html" class="cat-link">📱 Gadget Murah</a>
+            <a href="elektronik-promo.html" class="cat-link">🔌 Elektronik</a>
+            <a href="fashion-diskon.html" class="cat-link">👕 Fashion</a>
+            <a href="skincare-promo.html" class="cat-link">💄 Skincare</a>
+            <a href="olahraga-promo.html" class="cat-link">⚽ Olahraga</a>
+            <a href="makanan-minuman-promo.html" class="cat-link">🍜 Makanan</a>
+            <a href="rumah-tangga-promo.html" class="cat-link">🏠 Rumah Tangga</a>
         </div>
 
         <div class="grid">
