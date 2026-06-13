@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://znlhakim-svg.github.io/promo-murah/sitemap.xml
