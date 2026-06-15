@@ -83,7 +83,7 @@
 
     <div class="container">
         <div class="update-badge">
-            🔄 Update terakhir: 15 June 2026 18:08 WIB
+            🔄 Update terakhir: 16 June 2026 03:47 WIB
         </div>
 
         <div class="promo-note">
@@ -321,8 +321,11 @@
     </div>
 
     <div class="footer">
-        &copy; 2026 Promo Murah Tiap Hari 🦀 | Powered by Bos Zainal<br><span style="font-size:12px;color:#999;">👁️ <span id="visit-count">...</span> pengunjung</span>
+        &copy; 2026 Promo Murah Tiap Hari 🦀 | Powered by Bos Zainal<br>
+        <span style="font-size:12px;color:#999;">👁️ <span id="visit-count">...</span> pengunjung</span>
     </div>
-<script>fetch("https://api.countapi.xyz/hit/znlhakim-svg/promo-murah").then(r=>r.json()).then(d=>{var el=document.getElementById("visit-count");if(el)el.textContent=d.value.toLocaleString();}).catch(()=>{});</script>
+    <script>
+    fetch('https://api.countapi.xyz/hit/znlhakim-svg/promo-murah').then(r=>r.json()).then(d=>{var el=document.getElementById("visit-count");if(el)el.textContent=d.value.toLocaleString();}).catch(()=>{});
+    </script>
 </body>
 </html>
